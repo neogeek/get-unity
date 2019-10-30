@@ -10,6 +10,9 @@
     "node": ">=12.0"
   },
   "license": "MIT",
+  "dependencies": {
+    "update-notifier": "3.0.1"
+  },
   "devDependencies": {
     "@neogeek/eslint-config-standards": "github:neogeek/eslint-config-standards",
     "babel-eslint": "10.0.3",
