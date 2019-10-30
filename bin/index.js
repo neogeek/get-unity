@@ -5,6 +5,10 @@ const os = require('os');
 const chalk = require('chalk');
 const meow = require('meow');
 
+const updateNotifier = require('update-notifier');
+
+const pkg = require('../package.json');
+
 const getUnityUrls = require('../lib/get-unity-urls');
 
 const cli = meow(
@@ -28,6 +32,8 @@ const osKeyMap = {
     'Darwin': 'mac',
     'Windows_NT': 'win64'
 };
+
+updateNotifier({pkg}).notify();
 
 getUnityUrls(cli.input[0]).then(urls =>
     process.stdout.write(`${urls[osKeyMap[os.type()]]}`));

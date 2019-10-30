@@ -13,6 +13,7 @@
   "dependencies": {
     "chalk": "2.4.2",
     "meow": "5.0.0"
+    "update-notifier": "3.0.1"
   },
   "devDependencies": {
     "@neogeek/eslint-config-standards": "github:neogeek/eslint-config-standards",
