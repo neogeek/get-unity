@@ -2,22 +2,38 @@
 
 const os = require('os');
 
+const chalk = require('chalk');
+const meow = require('meow');
+
 const updateNotifier = require('update-notifier');
 
 const pkg = require('../package.json');
 
 const getUnityUrls = require('../lib/get-unity-urls');
 
+const cli = meow(
+    `
+      Usage
+        $ get-unity <version> [options]
+
+      Options
+      ${chalk.yellow('--help, -h')}     Display this help message.
+      ${chalk.yellow('--version, -v')}  Display the current installed version.
+  `,
+    {
+        'flags': {
+            'autoHelp': true,
+            'autoVersion': true
+        }
+    }
+);
+
 const osKeyMap = {
     'Darwin': 'mac',
     'Windows_NT': 'win64'
 };
 
-const PROCESS_CMD_LINE_ARGS_LENGTH = 2;
-
-const requestedVersion = process.argv.slice(PROCESS_CMD_LINE_ARGS_LENGTH).pop();
-
 updateNotifier({pkg}).notify();
 
-getUnityUrls(requestedVersion).then(urls =>
+getUnityUrls(cli.input[0]).then(urls =>
     process.stdout.write(`${urls[osKeyMap[os.type()]]}`));
