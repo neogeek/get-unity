@@ -2,6 +2,10 @@
 
 const os = require('os');
 
+const updateNotifier = require('update-notifier');
+
+const pkg = require('../package.json');
+
 const getUnityUrls = require('../lib/get-unity-urls');
 
 const osKeyMap = {
@@ -12,6 +16,8 @@ const osKeyMap = {
 const PROCESS_CMD_LINE_ARGS_LENGTH = 2;
 
 const requestedVersion = process.argv.slice(PROCESS_CMD_LINE_ARGS_LENGTH).pop();
+
+updateNotifier({pkg}).notify();
 
 getUnityUrls(requestedVersion).then(urls =>
     process.stdout.write(`${urls[osKeyMap[os.type()]]}`));
