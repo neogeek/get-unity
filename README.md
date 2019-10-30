@@ -2,6 +2,8 @@
 
 > 🕹 Command line tool for getting the download URL for the latest or specific version of Unity.
 
+[![NPM Version](http://img.shields.io/npm/v/get-unity.svg?style=flat)](https://www.npmjs.org/package/get-unity)
+
 ## Install
 
 ```bash
