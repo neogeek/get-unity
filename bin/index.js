@@ -19,6 +19,7 @@ const cli = meow(
         $ get-unity <version> [options]
 
       Options
+      ${chalk.yellow('--file, -f')}     Search file for Unity version number.
       ${chalk.yellow('--help, -h')}     Display this help message.
       ${chalk.yellow('--version, -v')}  Display the current installed version.
   `,
