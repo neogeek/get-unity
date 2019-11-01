@@ -63,7 +63,7 @@ if (cli.flags.file) {
 
         process.stderr.write(`${chalk.red('Error:')} ${message}`);
 
-        process.exit();
+        process.exit(1);
 
     }
 
