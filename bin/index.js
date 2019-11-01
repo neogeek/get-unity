@@ -52,10 +52,20 @@ updateNotifier({pkg}).notify();
 
 if (cli.flags.file) {
 
-    cli.input[0] = parseVersionFromString(readFileSync(
-        cli.flags.file,
-        'utf8'
-    ));
+    try {
+
+        cli.input[0] = parseVersionFromString(readFileSync(
+            cli.flags.file,
+            'utf8'
+        ));
+
+    } catch ({message}) {
+
+        process.stderr.write(`${chalk.red('Error:')} ${message}`);
+
+        process.exit();
+
+    }
 
 }
 
