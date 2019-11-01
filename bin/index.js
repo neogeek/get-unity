@@ -22,8 +22,16 @@ const cli = meow(
   `,
     {
         'flags': {
-            'autoHelp': true,
-            'autoVersion': true
+            'help': {
+                'alias': 'h',
+                'default': false,
+                'type': 'boolean'
+            },
+            'version': {
+                'alias': 'v',
+                'default': false,
+                'type': 'boolean'
+            }
         }
     }
 );
