@@ -27,7 +27,6 @@ const cli = meow(
         'flags': {
             'file': {
                 'alias': 'f',
-                'default': false,
                 'type': 'string'
             },
             'help': {
