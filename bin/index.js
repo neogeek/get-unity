@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 
 const os = require('os');
+const {readFileSync} = require('fs');
 
 const chalk = require('chalk');
 const meow = require('meow');
@@ -10,6 +11,7 @@ const updateNotifier = require('update-notifier');
 const pkg = require('../package.json');
 
 const getUnityUrls = require('../lib/get-unity-urls');
+const {parseVersionFromString} = require('../lib/parsers');
 
 const cli = meow(
     `
@@ -22,6 +24,11 @@ const cli = meow(
   `,
     {
         'flags': {
+            'file': {
+                'alias': 'f',
+                'default': false,
+                'type': 'string'
+            },
             'help': {
                 'alias': 'h',
                 'default': false,
@@ -42,6 +49,15 @@ const osKeyMap = {
 };
 
 updateNotifier({pkg}).notify();
+
+if (cli.flags.file) {
+
+    cli.input[0] = parseVersionFromString(readFileSync(
+        cli.flags.file,
+        'utf8'
+    ));
+
+}
 
 getUnityUrls(cli.input[0]).then(urls =>
     process.stdout.write(`${urls[osKeyMap[os.type()]]}`));
