@@ -31,10 +31,16 @@ $ get-unity 2019.x
 $ get-unity 2019.2.x
 ```
 
+### Get the download URL of the version found in ProjectSettings/ProjectVersion.txt
+
+```bash
+$ get-unity --file=ProjectSettings/ProjectVersion.txt
+```
+
 ### Exporting URL to an enviroment variable.
 
 ```bash
-$ UNITY_URL=$(get-unity 2019.2.x)
+$ UNITY_URL=$(get-unity --file=ProjectSettings/ProjectVersion.txt)
 $ echo $UNITY_URL
 ```
 
