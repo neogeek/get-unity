@@ -69,6 +69,7 @@ if (cli.flags.file) {
     }
 
 }
+
 editorInstallersUpdate()
     .then(() => getUnityUrls(cli.input[0]))
     .then(urls => process.stdout.write(`${urls[osKeyMap[os.type()]]}`));
