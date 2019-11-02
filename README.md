@@ -13,19 +13,19 @@ $ npm install -g get-unity
 
 ## Usage
 
-### Get the latest major release of Unity.
+### Get the download URL of the latest major release of Unity.
 
 ```bash
 $ get-unity
 ```
 
-### Get the latest minor release of Unity.
+### Get the download URL of the latest minor release of Unity.
 
 ```bash
 $ get-unity 2019.x
 ```
 
-### Get the latest patch release of Unity.
+### Get the download URL of the latest patch release of Unity.
 
 ```bash
 $ get-unity 2019.2.x
