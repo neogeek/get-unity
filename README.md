@@ -1,4 +1,4 @@
-# get-unity
+# ![get-unity](logo.png)
 
 > 🕹 Command line tool for getting the download URL for the latest or specific version of Unity.
 
