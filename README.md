@@ -46,7 +46,7 @@ $ echo $UNITY_URL
 
 ## API
 
-### `getUnityUrls`
+### `getUnityUrls(string filter)`
 
 ```javascript
 const { getUnityUrls } = require("get-unity");
@@ -56,7 +56,7 @@ getUnityUrls("2019").then(urls => console.log(urls));
 // https://download.unity3d.com/download_unity/5f859a4cfee5/MacEditorInstaller/Unity-2019.2.11f1.pkg
 ```
 
-### `parseVersionFromString`
+### `parseVersionFromString(string contents)`
 
 ```javascript
 const { parsers } = require("get-unity");
