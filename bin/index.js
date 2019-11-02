@@ -11,6 +11,7 @@ const updateNotifier = require('update-notifier');
 const pkg = require('../package.json');
 
 const getUnityUrls = require('../lib/get-unity-urls');
+const editorInstallersUpdate = require('../lib/editor-installers-update');
 const {parseVersionFromString} = require('../lib/parsers');
 
 const cli = meow(
@@ -68,6 +69,6 @@ if (cli.flags.file) {
     }
 
 }
-
-getUnityUrls(cli.input[0]).then(urls =>
-    process.stdout.write(`${urls[osKeyMap[os.type()]]}`));
+editorInstallersUpdate()
+    .then(() => getUnityUrls(cli.input[0]))
+    .then(urls => process.stdout.write(`${urls[osKeyMap[os.type()]]}`));
