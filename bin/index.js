@@ -20,9 +20,10 @@ const cli = meow(
         $ get-unity <version> [options]
 
       Options
-      ${chalk.yellow('--file, -f')}     Search file for Unity version number.
-      ${chalk.yellow('--help, -h')}     Display this help message.
-      ${chalk.yellow('--version, -v')}  Display the current installed version.
+      ${chalk.yellow('--file, -f')}       Search file for Unity version number.
+      ${chalk.yellow('--offline, -o')}    Prevent request to update local cache of versions.
+      ${chalk.yellow('--help, -h')}       Display this help message.
+      ${chalk.yellow('--version, -v')}    Display the current installed version.
   `,
     {
         'flags': {
@@ -32,6 +33,11 @@ const cli = meow(
             },
             'help': {
                 'alias': 'h',
+                'default': false,
+                'type': 'boolean'
+            },
+            'offline': {
+                'alias': 'o',
                 'default': false,
                 'type': 'boolean'
             },
@@ -70,6 +76,15 @@ if (cli.flags.file) {
 
 }
 
-editorInstallersUpdate()
-    .then(() => getUnityUrls(cli.input[0]))
-    .then(urls => process.stdout.write(`${urls[osKeyMap[os.type()]]}`));
+if (cli.flags.offline) {
+
+    getUnityUrls(cli.input[0]).then(urls =>
+        process.stdout.write(`${urls[osKeyMap[os.type()]]}`));
+
+} else {
+
+    editorInstallersUpdate()
+        .then(() => getUnityUrls(cli.input[0]))
+        .then(urls => process.stdout.write(`${urls[osKeyMap[os.type()]]}`));
+
+}
