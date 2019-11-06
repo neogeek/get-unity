@@ -12,7 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "2.4.2",
-    "jsdom": "15.2.0",
+    "jsdom": "15.2.1",
     "meow": "5.0.0",
     "request": "2.88.0",
     "update-notifier": "3.0.1"
