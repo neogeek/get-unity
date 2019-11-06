@@ -81,7 +81,7 @@ Output:
 2019.2.9f1
 ```
 
-## `updateEditorInstallers(string editorInstallersFilePath)`
+## `updateEditorInstallers(string filePath)`
 
 ```javascript
 updateEditorInstallers("./data/editor-installers.json");
