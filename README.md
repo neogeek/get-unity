@@ -4,6 +4,7 @@
 
 [![NPM Version](http://img.shields.io/npm/v/get-unity.svg?style=flat)](https://www.npmjs.org/package/get-unity)
 [![Build Status](https://travis-ci.com/neogeek/get-unity.svg?branch=master)](https://travis-ci.com/neogeek/get-unity)
+[![Build status](https://ci.appveyor.com/api/projects/status/2k76ian4w73uk3af?svg=true)](https://ci.appveyor.com/project/neogeek/get-unity)
 
 ## Install
 
