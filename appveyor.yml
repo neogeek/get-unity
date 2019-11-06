@@ -3,7 +3,6 @@ environment:
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - if [[ `npm -v` != 6* ]]; then npm i -g npm@6; fi
   - npm install
 
 test_script:
