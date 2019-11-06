@@ -84,6 +84,11 @@ if (cli.flags.offline) {
 } else {
 
     editorInstallersUpdate()
+        .catch(() => {
+
+            process.stderr.write(`${chalk.red('Error:')} There was an error fetching the latest versions from unity.com`);
+
+        })
         .then(() => getUnityUrls(cli.input[0]))
         .then(urls => process.stdout.write(`${urls[osKeyMap[os.type()]]}`));
 
