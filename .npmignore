@@ -4,5 +4,6 @@ temp/
 
 .eslintrc
 .travis.yml
+appveyor.yml
 
 logo.png
