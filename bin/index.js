@@ -22,7 +22,7 @@ const cli = meow(
 
       Options
       ${chalk.yellow('--file, -f')}       Search file for Unity version number.
-      ${chalk.yellow('--offline, -o')}    Prevent request to update local cache of versions.
+      ${chalk.yellow('--offline, -o')}    Prevent request to update local cache of editor versions.
       ${chalk.yellow('--help, -h')}       Display this help message.
       ${chalk.yellow('--version, -v')}    Display the current installed version.
   `,
