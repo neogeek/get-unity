@@ -10,8 +10,8 @@ const updateNotifier = require('update-notifier');
 
 const pkg = require('../package.json');
 
-const getUnityUrls = require('../lib/get-unity-urls');
 const editorInstallersUpdate = require('../lib/editor-installers-update');
+const getUnityUrls = require('../lib/get-unity-urls');
 const {parseVersionFromString} = require('../lib/parsers');
 
 const cli = meow(
