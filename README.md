@@ -47,12 +47,6 @@ $ echo $UNITY_URL
 
 ## API
 
-## `editorInstallersUpdate(string editorInstallersFilePath)`
-
-```javascript
-editorInstallersUpdate();
-```
-
 ### `getUnityUrls(string filter)`
 
 ```javascript
@@ -85,4 +79,10 @@ Output:
 
 ```
 2019.2.9f1
+```
+
+## `updateEditorInstallers(string editorInstallersFilePath)`
+
+```javascript
+updateEditorInstallers("./data/editor-installers.json");
 ```

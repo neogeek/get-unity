@@ -11,7 +11,7 @@ const updateNotifier = require('update-notifier');
 
 const pkg = require('../package.json');
 
-const editorInstallersUpdate = require('../lib/editor-installers-update');
+const updateEditorInstallers = require('../lib/update-editor-installers');
 const getUnityUrls = require('../lib/get-unity-urls');
 const {parseVersionFromString} = require('../lib/parsers');
 
@@ -89,7 +89,7 @@ if (cli.flags.offline) {
 
 } else {
 
-    editorInstallersUpdate(EDITOR_INSTALLERS_FILE_PATH)
+    updateEditorInstallers(EDITOR_INSTALLERS_FILE_PATH)
         .catch(({message}) => {
 
             process.stderr.write(`${chalk.red('Error:')} ${message}`);
