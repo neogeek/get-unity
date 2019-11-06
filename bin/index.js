@@ -56,6 +56,11 @@ const osKeyMap = {
     'Windows_NT': 'win64'
 };
 
+const EDITOR_INSTALLERS_FILE_PATH = join(
+    __dirname,
+    '../data/editor-installers.json'
+);
+
 updateNotifier({pkg}).notify();
 
 if (cli.flags.file) {
@@ -84,10 +89,7 @@ if (cli.flags.offline) {
 
 } else {
 
-    editorInstallersUpdate(join(
-        __dirname,
-        '../data/editor-installers.json'
-    ))
+    editorInstallersUpdate(EDITOR_INSTALLERS_FILE_PATH)
         .catch(({message}) => {
 
             process.stderr.write(`${chalk.red('Error:')} ${message}`);
