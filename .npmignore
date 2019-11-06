@@ -1,3 +1,8 @@
 .github/
 
 temp/
+
+.eslintrc
+.travis.yml
+
+logo.png
