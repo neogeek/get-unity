@@ -84,7 +84,10 @@ if (cli.flags.file) {
 
 if (cli.flags.offline) {
 
-    getUnityUrls(cli.input[0]).then(urls =>
+    getUnityUrls(
+        cli.input[0],
+        EDITOR_INSTALLERS_FILE_PATH
+    ).then(urls =>
         process.stdout.write(`${urls[osKeyMap[os.type()]]}`));
 
 } else {
@@ -95,7 +98,10 @@ if (cli.flags.offline) {
             process.stderr.write(`${chalk.red('Error:')} ${message}`);
 
         })
-        .then(() => getUnityUrls(cli.input[0]))
+        .then(() => getUnityUrls(
+            cli.input[0],
+            EDITOR_INSTALLERS_FILE_PATH
+        ))
         .then(urls => process.stdout.write(`${urls[osKeyMap[os.type()]]}`));
 
 }

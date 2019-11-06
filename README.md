@@ -47,12 +47,14 @@ $ echo $UNITY_URL
 
 ## API
 
-### `getUnityUrls(string filter)`
+### `getUnityUrls(string filter [, string filePath])`
 
 ```javascript
 const { getUnityUrls } = require("get-unity");
 
-getUnityUrls("2019").then(urls => console.log(urls));
+getUnityUrls("2019", "./data/editor-installers.json").then(urls =>
+  console.log(urls)
+);
 ```
 
 Output:
