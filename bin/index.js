@@ -2,6 +2,7 @@
 
 const os = require('os');
 const {readFileSync} = require('fs');
+const {join} = require('path');
 
 const chalk = require('chalk');
 const meow = require('meow');
@@ -83,7 +84,10 @@ if (cli.flags.offline) {
 
 } else {
 
-    editorInstallersUpdate()
+    editorInstallersUpdate(join(
+        __dirname,
+        '../data/editor-installers.json'
+    ))
         .catch(({message}) => {
 
             process.stderr.write(`${chalk.red('Error:')} ${message}`);
