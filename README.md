@@ -47,6 +47,12 @@ $ echo $UNITY_URL
 
 ## API
 
+## `editorInstallersUpdate(string editorInstallersFilePath)`
+
+```javascript
+editorInstallersUpdate();
+```
+
 ### `getUnityUrls(string filter)`
 
 ```javascript
@@ -60,7 +66,7 @@ Output:
 ```json
 {
   "mac": "https://download.unity3d.com/download_unity/5f859a4cfee5/MacEditorInstaller/Unity-2019.2.11f1.pkg",
-  "win64": "https://netstorage.unity3d.com/unity/5f859a4cfee5/Windows64EditorInstaller/UnitySetup64-2019.2.11f1.exe"
+  "win64": "https://download.unity3d.com/download_unity/5f859a4cfee5/Windows64EditorInstaller/UnitySetup64-2019.2.11f1.exe"
 }
 ```
 
