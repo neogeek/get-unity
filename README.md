@@ -86,5 +86,9 @@ Output:
 ### `updateEditorInstallers([string filePath])`
 
 ```javascript
-updateEditorInstallers("./data/editor-installers.json");
+const { updateEditorInstallers } = require("get-unity");
+
+updateEditorInstallers("./data/editor-installers.json").then(() =>
+  console.log("Done")
+);
 ```
