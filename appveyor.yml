@@ -1,0 +1,14 @@
+environment:
+  nodejs_version: "12"
+
+install:
+  - ps: Install-Product node $env:nodejs_version
+  - if [[ `npm -v` != 6* ]]; then npm i -g npm@6; fi
+  - npm install
+
+test_script:
+  - node --version
+  - npm --version
+  - npm test
+
+build: off
