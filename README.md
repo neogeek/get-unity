@@ -47,12 +47,36 @@ $ echo $UNITY_URL
 
 ## API
 
-### `getUnityUrls(string filter)`
+### `checkCacheExpiry(string path, integer ttl)`
+
+```javascript
+const { checkCacheExpiry } = require("get-unity");
+
+checkCacheExpiry("./data/editor-installers.json", 3600000)
+  .then(() => console.log("Cache is ok."))
+  .catch(() => console.log("Cache has expired."));
+```
+
+### `fetchWithLocalCache(string path, integer ttl)`
+
+```javascript
+const { fetchWithLocalCache } = require("get-unity");
+
+fetchWithLocalCache(
+  "https://unity3d.com/get-unity/download/archive",
+  "./temp/archive.html",
+  3600000
+).then(response => console.log(response));
+```
+
+### `getUnityUrls(string filter [, string filePath])`
 
 ```javascript
 const { getUnityUrls } = require("get-unity");
 
-getUnityUrls("2019").then(urls => console.log(urls));
+getUnityUrls("2019", "./data/editor-installers.json").then(urls =>
+  console.log(urls)
+);
 ```
 
 Output:
@@ -60,7 +84,7 @@ Output:
 ```json
 {
   "mac": "https://download.unity3d.com/download_unity/5f859a4cfee5/MacEditorInstaller/Unity-2019.2.11f1.pkg",
-  "win64": "https://netstorage.unity3d.com/unity/5f859a4cfee5/Windows64EditorInstaller/UnitySetup64-2019.2.11f1.exe"
+  "win64": "https://download.unity3d.com/download_unity/5f859a4cfee5/Windows64EditorInstaller/UnitySetup64-2019.2.11f1.exe"
 }
 ```
 
@@ -79,4 +103,14 @@ Output:
 
 ```
 2019.2.9f1
+```
+
+### `updateEditorInstallers([string filePath])`
+
+```javascript
+const { updateEditorInstallers } = require("get-unity");
+
+updateEditorInstallers("./data/editor-installers.json").then(() =>
+  console.log("Done")
+);
 ```
