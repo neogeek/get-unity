@@ -1,5 +1,13 @@
 # Changelog
 
+## [v1.1.1](https://github.com/neogeek/get-unity/tree/v1.1.1) (2019-11-06)
+
+[Full Changelog](https://github.com/neogeek/get-unity/compare/v1.1.0...v1.1.1)
+
+**Fixed bugs:**
+
+- \[hotfix\] Added missing dependency. [\#18](https://github.com/neogeek/get-unity/pull/18) ([neogeek](https://github.com/neogeek))
+
 ## [v1.1.0](https://github.com/neogeek/get-unity/tree/v1.1.0) (2019-11-06)
 
 [Full Changelog](https://github.com/neogeek/get-unity/compare/v1.0.0...v1.1.0)
