@@ -7,3 +7,5 @@ temp/
 appveyor.yml
 
 logo.png
+
+Makefile
