@@ -1,3 +1,6 @@
 {
-  "extends": ["@neogeek/eslint-config-standards"]
+  "extends": ["@neogeek/eslint-config-standards"],
+  "rules": {
+    "no-ternary": "off"
+  }
 }

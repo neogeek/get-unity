@@ -22,6 +22,7 @@ const cli = meow(
 
       Options
       ${chalk.yellow('--file, -f')}       Search file for Unity version number.
+      ${chalk.yellow('--force, -r')}      Force update to local cache of editor versions.
       ${chalk.yellow('--offline, -o')}    Prevent request to update local cache of editor versions.
       ${chalk.yellow('--help, -h')}       Display this help message.
       ${chalk.yellow('--version, -v')}    Display the current installed version.
@@ -31,6 +32,11 @@ const cli = meow(
             'file': {
                 'alias': 'f',
                 'type': 'string'
+            },
+            'force': {
+                'alias': 'r',
+                'default': false,
+                'type': 'boolean'
             },
             'help': {
                 'alias': 'h',
@@ -60,6 +66,8 @@ const EDITOR_INSTALLERS_FILE_PATH = join(
     __dirname,
     '../data/editor-installers.json'
 );
+
+const DEFAULT_CACHE_TTL = 3600000;
 
 updateNotifier({pkg}).notify();
 
@@ -92,7 +100,12 @@ if (cli.flags.offline) {
 
 } else {
 
-    updateEditorInstallers(EDITOR_INSTALLERS_FILE_PATH)
+    updateEditorInstallers(
+        EDITOR_INSTALLERS_FILE_PATH,
+        cli.flags.force
+            ? 0
+            : DEFAULT_CACHE_TTL
+    )
         .catch(({message}) => {
 
             process.stderr.write(`${chalk.red('Error:')} ${message}`);

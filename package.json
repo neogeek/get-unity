@@ -25,7 +25,8 @@
     "jest": "24.9.0"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "node bin/index.js --force"
   },
   "keywords": [
     "unity"
