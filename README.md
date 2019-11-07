@@ -105,12 +105,12 @@ Output:
 2019.2.9f1
 ```
 
-### `updateEditorInstallers([string filePath])`
+### `updateEditorInstallers([string filePath, int ttl])`
 
 ```javascript
 const { updateEditorInstallers } = require("get-unity");
 
-updateEditorInstallers("./data/editor-installers.json").then(() =>
+updateEditorInstallers("./data/editor-installers.json", 3600000).then(() =>
   console.log("Done")
 );
 ```
