@@ -45,6 +45,22 @@ $ UNITY_URL=$(get-unity --file=ProjectSettings/ProjectVersion.txt)
 $ echo $UNITY_URL
 ```
 
+## Help
+
+```bash
+  Command line tool for getting the download URL for the latest or specific version of Unity.
+
+  Usage
+    $ get-unity <version> [options]
+
+  Options
+  --file, -f       Search file for Unity version number.
+  --force, -r      Force update to local cache of editor versions.
+  --offline, -o    Prevent request to update local cache of editor versions.
+  --help, -h       Display this help message.
+  --version, -v    Display the current installed version.
+```
+
 ## API
 
 ### `checkCacheExpiry(string path, integer ttl)`
