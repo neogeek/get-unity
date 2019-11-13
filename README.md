@@ -63,28 +63,6 @@ $ echo $UNITY_URL
 
 ## API
 
-### `checkCacheExpiry(string path, integer ttl)`
-
-```javascript
-const { checkCacheExpiry } = require("get-unity");
-
-checkCacheExpiry("./data/editor-installers.json", 3600000)
-  .then(() => console.log("Cache is ok."))
-  .catch(() => console.log("Cache has expired."));
-```
-
-### `fetchWithLocalCache(string path, integer ttl)`
-
-```javascript
-const { fetchWithLocalCache } = require("get-unity");
-
-fetchWithLocalCache(
-  "https://unity3d.com/get-unity/download/archive",
-  "./temp/archive.html",
-  3600000
-).then(response => console.log(response));
-```
-
 ### `getUnityUrls(string filter [, string filePath])`
 
 ```javascript
