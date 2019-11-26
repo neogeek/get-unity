@@ -14,8 +14,7 @@
     "chalk": "3.0.0",
     "jsdom": "15.2.1",
     "meow": "5.0.0",
-    "mkdirp": "0.5.1",
-    "request": "2.88.0",
+    "raspar": "2.0.0",
     "update-notifier": "3.0.1"
   },
   "devDependencies": {
