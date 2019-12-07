@@ -1,6 +1,22 @@
 # Changelog
 
-## [v1.1.1](https://github.com/neogeek/get-unity/tree/v1.1.1) (2019-11-06)
+## [v1.2.0](https://github.com/neogeek/get-unity/tree/v1.2.0) (2019-12-07)
+
+[Full Changelog](https://github.com/neogeek/get-unity/compare/v1.1.1...v1.2.0)
+
+**Implemented enhancements:**
+
+- Add --force flag for disregarding the TTL on the editor-installer.json cache [\#17](https://github.com/neogeek/get-unity/issues/17)
+- Setup Travis auto update of editor-installers.json [\#16](https://github.com/neogeek/get-unity/issues/16)
+- \[feat\] Force flag [\#19](https://github.com/neogeek/get-unity/pull/19) ([neogeek](https://github.com/neogeek))
+
+**Merged pull requests:**
+
+- \[feat\] Travis auto update editor installers [\#22](https://github.com/neogeek/get-unity/pull/22) ([neogeek](https://github.com/neogeek))
+- \[feat\] Switched to using raspar utilities for dealing with cache. [\#21](https://github.com/neogeek/get-unity/pull/21) ([neogeek](https://github.com/neogeek))
+- \[hotfix\] Updated packages. [\#20](https://github.com/neogeek/get-unity/pull/20) ([neogeek](https://github.com/neogeek))
+
+## [v1.1.1](https://github.com/neogeek/get-unity/tree/v1.1.1) (2019-11-07)
 
 [Full Changelog](https://github.com/neogeek/get-unity/compare/v1.1.0...v1.1.1)
 
