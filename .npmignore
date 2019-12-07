@@ -2,6 +2,8 @@
 
 temp/
 
+utils/
+
 .eslintrc
 .travis.yml
 appveyor.yml
