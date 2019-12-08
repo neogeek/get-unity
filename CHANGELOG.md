@@ -1,5 +1,21 @@
 # Changelog
 
+## [v1.3.0](https://github.com/neogeek/get-unity/tree/v1.3.0) (2019-12-07)
+
+[Full Changelog](https://github.com/neogeek/get-unity/compare/v1.2.0...v1.3.0)
+
+**Implemented enhancements:**
+
+- Add Lunix downloads [\#15](https://github.com/neogeek/get-unity/issues/15)
+
+**Closed issues:**
+
+- Test on Windows [\#13](https://github.com/neogeek/get-unity/issues/13)
+
+**Merged pull requests:**
+
+- \[feat\] Linux downloads [\#24](https://github.com/neogeek/get-unity/pull/24) ([neogeek](https://github.com/neogeek))
+
 ## [v1.2.0](https://github.com/neogeek/get-unity/tree/v1.2.0) (2019-12-07)
 
 [Full Changelog](https://github.com/neogeek/get-unity/compare/v1.1.1...v1.2.0)
