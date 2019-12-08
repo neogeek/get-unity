@@ -77,6 +77,7 @@ Output:
 
 ```json
 {
+  "linux": "https://download.unity3d.com/download_unity/5f859a4cfee5/LinuxEditorInstaller/Unity.tar.xz",
   "mac": "https://download.unity3d.com/download_unity/5f859a4cfee5/MacEditorInstaller/Unity-2019.2.11f1.pkg",
   "win64": "https://download.unity3d.com/download_unity/5f859a4cfee5/Windows64EditorInstaller/UnitySetup64-2019.2.11f1.exe"
 }
