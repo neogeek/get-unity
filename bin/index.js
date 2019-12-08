@@ -59,6 +59,7 @@ const cli = meow(
 
 const osKeyMap = {
     'Darwin': 'mac',
+    'Linux': 'linux',
     'Windows_NT': 'win64'
 };
 
