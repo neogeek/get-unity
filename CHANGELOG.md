@@ -1,6 +1,14 @@
 # Changelog
 
-## [v1.3.0](https://github.com/neogeek/get-unity/tree/v1.3.0) (2019-12-07)
+## [v1.3.1](https://github.com/neogeek/get-unity/tree/v1.3.1) (2020-03-13)
+
+[Full Changelog](https://github.com/neogeek/get-unity/compare/v1.3.0...v1.3.1)
+
+**Closed issues:**
+
+- Test on Linux [\#23](https://github.com/neogeek/get-unity/issues/23)
+
+## [v1.3.0](https://github.com/neogeek/get-unity/tree/v1.3.0) (2019-12-08)
 
 [Full Changelog](https://github.com/neogeek/get-unity/compare/v1.2.0...v1.3.0)
 
