@@ -11,9 +11,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "chalk": "3.0.0",
-    "jsdom": "16.2.1",
-    "meow": "6.0.1",
+    "chalk": "4.0.0",
+    "jsdom": "16.2.2",
+    "meow": "6.1.0",
     "raspar": "2.0.0",
     "update-notifier": "4.1.0"
   },
@@ -21,7 +21,7 @@
     "@neogeek/eslint-config-standards": "github:neogeek/eslint-config-standards",
     "babel-eslint": "10.1.0",
     "eslint": "6.8.0",
-    "jest": "25.1.0"
+    "jest": "25.2.6"
   },
   "scripts": {
     "test": "jest",
