@@ -1,5 +1,14 @@
 # Changelog
 
+## [v1.4.0](https://github.com/neogeek/get-unity/tree/v1.4.0) (2020-04-30)
+
+[Full Changelog](https://github.com/neogeek/get-unity/compare/v1.3.1...v1.4.0)
+
+**Merged pull requests:**
+
+- \[hotfix\] Return promise from catch block. [\#26](https://github.com/neogeek/get-unity/pull/26) ([neogeek](https://github.com/neogeek))
+- \[hotfix\] Fixed issue where the cache dir was placed in the path the command was called from. [\#25](https://github.com/neogeek/get-unity/pull/25) ([neogeek](https://github.com/neogeek))
+
 ## [v1.3.1](https://github.com/neogeek/get-unity/tree/v1.3.1) (2020-03-13)
 
 [Full Changelog](https://github.com/neogeek/get-unity/compare/v1.3.0...v1.3.1)
@@ -44,10 +53,6 @@
 
 [Full Changelog](https://github.com/neogeek/get-unity/compare/v1.1.0...v1.1.1)
 
-**Fixed bugs:**
-
-- \[hotfix\] Added missing dependency. [\#18](https://github.com/neogeek/get-unity/pull/18) ([neogeek](https://github.com/neogeek))
-
 ## [v1.1.0](https://github.com/neogeek/get-unity/tree/v1.1.0) (2019-11-06)
 
 [Full Changelog](https://github.com/neogeek/get-unity/compare/v1.0.0...v1.1.0)
@@ -62,6 +67,10 @@
 - Add unit tests [\#3](https://github.com/neogeek/get-unity/issues/3)
 - Get Unity version by passing ProjectSettings/ProjectVersion.txt to command [\#2](https://github.com/neogeek/get-unity/issues/2)
 - Add local caching of Unity versions [\#1](https://github.com/neogeek/get-unity/issues/1)
+
+**Fixed bugs:**
+
+- \[hotfix\] Added missing dependency. [\#18](https://github.com/neogeek/get-unity/pull/18) ([neogeek](https://github.com/neogeek))
 
 **Merged pull requests:**
 
