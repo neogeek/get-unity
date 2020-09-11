@@ -1,89 +1,41 @@
 # Changelog
 
-## [v1.4.0](https://github.com/neogeek/get-unity/tree/v1.4.0) (2020-04-30)
+## [HEAD] - 2020-09-10
 
-[Full Changelog](https://github.com/neogeek/get-unity/compare/v1.3.1...v1.4.0)
+-   No merges found
 
-**Merged pull requests:**
+## [v1.4.0] - 2020-04-30
 
-- \[hotfix\] Return promise from catch block. [\#26](https://github.com/neogeek/get-unity/pull/26) ([neogeek](https://github.com/neogeek))
-- \[hotfix\] Fixed issue where the cache dir was placed in the path the command was called from. [\#25](https://github.com/neogeek/get-unity/pull/25) ([neogeek](https://github.com/neogeek))
+-   Return promise from catch block. (#26) [#26](https://github.com/neogeek/get-unity/pull/26)
+-   Fixed issue where the cache dir was placed in the path the command was called from. (#25) [#25](https://github.com/neogeek/get-unity/pull/25)
 
-## [v1.3.1](https://github.com/neogeek/get-unity/tree/v1.3.1) (2020-03-13)
+## [v1.3.1] - 2020-03-13
 
-[Full Changelog](https://github.com/neogeek/get-unity/compare/v1.3.0...v1.3.1)
+-   No merges found
 
-**Closed issues:**
+## [v1.3.0] - 2019-12-07
 
-- Test on Linux [\#23](https://github.com/neogeek/get-unity/issues/23)
+-   [feat] Linux downloads (#24) [#24](https://github.com/neogeek/get-unity/pull/24)
 
-## [v1.3.0](https://github.com/neogeek/get-unity/tree/v1.3.0) (2019-12-08)
+## [v1.2.0] - 2019-12-07
 
-[Full Changelog](https://github.com/neogeek/get-unity/compare/v1.2.0...v1.3.0)
+-   [feat] Travis auto update editor installers (#22) [#22](https://github.com/neogeek/get-unity/pull/22)
+-   Switched to using raspar utilities for dealing with cache. (#21) [#21](https://github.com/neogeek/get-unity/pull/21)
+-   Updated packages. (#20) [#20](https://github.com/neogeek/get-unity/pull/20)
+-   [feat] Force flag (#19) [#19](https://github.com/neogeek/get-unity/pull/19)
 
-**Implemented enhancements:**
+## [v1.1.1] - 2019-11-06
 
-- Add Lunix downloads [\#15](https://github.com/neogeek/get-unity/issues/15)
+-   [hotfix] Added missing dependency. (#18) [#18](https://github.com/neogeek/get-unity/pull/18)
 
-**Closed issues:**
+## [v1.1.0] - 2019-11-06
 
-- Test on Windows [\#13](https://github.com/neogeek/get-unity/issues/13)
+-   Added update-notifier package. [#6](https://github.com/neogeek/get-unity/pull/6)
+-   Editor installers update (and offline mode) (#14) [#14](https://github.com/neogeek/get-unity/pull/14)
+-   Add parsing file (ProjectVersion.txt) via CLI flag support. (#12) [#12](https://github.com/neogeek/get-unity/pull/12)
+-   Added aliases to help and version flags. (#11) [#11](https://github.com/neogeek/get-unity/pull/11)
+-   Added chalk and meow for managing cli input and flags. (#8) [#8](https://github.com/neogeek/get-unity/pull/8)
 
-**Merged pull requests:**
+## [v1.0.0] - 2019-10-29
 
-- \[feat\] Linux downloads [\#24](https://github.com/neogeek/get-unity/pull/24) ([neogeek](https://github.com/neogeek))
-
-## [v1.2.0](https://github.com/neogeek/get-unity/tree/v1.2.0) (2019-12-07)
-
-[Full Changelog](https://github.com/neogeek/get-unity/compare/v1.1.1...v1.2.0)
-
-**Implemented enhancements:**
-
-- Add --force flag for disregarding the TTL on the editor-installer.json cache [\#17](https://github.com/neogeek/get-unity/issues/17)
-- Setup Travis auto update of editor-installers.json [\#16](https://github.com/neogeek/get-unity/issues/16)
-- \[feat\] Force flag [\#19](https://github.com/neogeek/get-unity/pull/19) ([neogeek](https://github.com/neogeek))
-
-**Merged pull requests:**
-
-- \[feat\] Travis auto update editor installers [\#22](https://github.com/neogeek/get-unity/pull/22) ([neogeek](https://github.com/neogeek))
-- \[feat\] Switched to using raspar utilities for dealing with cache. [\#21](https://github.com/neogeek/get-unity/pull/21) ([neogeek](https://github.com/neogeek))
-- \[hotfix\] Updated packages. [\#20](https://github.com/neogeek/get-unity/pull/20) ([neogeek](https://github.com/neogeek))
-
-## [v1.1.1](https://github.com/neogeek/get-unity/tree/v1.1.1) (2019-11-07)
-
-[Full Changelog](https://github.com/neogeek/get-unity/compare/v1.1.0...v1.1.1)
-
-## [v1.1.0](https://github.com/neogeek/get-unity/tree/v1.1.0) (2019-11-06)
-
-[Full Changelog](https://github.com/neogeek/get-unity/compare/v1.0.0...v1.1.0)
-
-**Implemented enhancements:**
-
-- Create logo / social preview image [\#10](https://github.com/neogeek/get-unity/issues/10)
-- Add travis-ci testing [\#9](https://github.com/neogeek/get-unity/issues/9)
-- Added meow package for CLI flags  [\#7](https://github.com/neogeek/get-unity/issues/7)
-- Add update-notifier package [\#5](https://github.com/neogeek/get-unity/issues/5)
-- Port over script from @neogeek/unity-ci-tools repo for getting latest Unity editor version [\#4](https://github.com/neogeek/get-unity/issues/4)
-- Add unit tests [\#3](https://github.com/neogeek/get-unity/issues/3)
-- Get Unity version by passing ProjectSettings/ProjectVersion.txt to command [\#2](https://github.com/neogeek/get-unity/issues/2)
-- Add local caching of Unity versions [\#1](https://github.com/neogeek/get-unity/issues/1)
-
-**Fixed bugs:**
-
-- \[hotfix\] Added missing dependency. [\#18](https://github.com/neogeek/get-unity/pull/18) ([neogeek](https://github.com/neogeek))
-
-**Merged pull requests:**
-
-- Editor installers update \(and offline mode\) [\#14](https://github.com/neogeek/get-unity/pull/14) ([neogeek](https://github.com/neogeek))
-- Add parsing file \(ProjectVersion.txt\) via CLI flag support. [\#12](https://github.com/neogeek/get-unity/pull/12) ([neogeek](https://github.com/neogeek))
-- Added aliases to help and version flags. [\#11](https://github.com/neogeek/get-unity/pull/11) ([neogeek](https://github.com/neogeek))
-- Added chalk and meow for managing cli input and flags. [\#8](https://github.com/neogeek/get-unity/pull/8) ([neogeek](https://github.com/neogeek))
-- Added update-notifier package. [\#6](https://github.com/neogeek/get-unity/pull/6) ([neogeek](https://github.com/neogeek))
-
-## [v1.0.0](https://github.com/neogeek/get-unity/tree/v1.0.0) (2019-10-29)
-
-[Full Changelog](https://github.com/neogeek/get-unity/compare/a3395b7fbc87e0fb30274acd52940f66095de36f...v1.0.0)
-
-
-
-\* *This Changelog was automatically generated by [github_changelog_generator](https://github.com/github-changelog-generator/github-changelog-generator)*
+-   Initial release! 🎉
