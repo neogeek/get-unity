@@ -1,4 +1,9 @@
 {
+  "2020.1.5f1": {
+    "linux": "https://download.unity3d.com/download_unity/e025938fdedc/LinuxEditorInstaller/Unity.tar.xz",
+    "mac": "https://download.unity3d.com/download_unity/e025938fdedc/MacEditorInstaller/Unity-2020.1.5f1.pkg",
+    "win64": "https://download.unity3d.com/download_unity/e025938fdedc/Windows64EditorInstaller/UnitySetup64-2020.1.5f1.exe"
+  },
   "2020.1.4f1": {
     "linux": "https://download.unity3d.com/download_unity/fa717bb873ec/LinuxEditorInstaller/Unity.tar.xz",
     "mac": "https://download.unity3d.com/download_unity/fa717bb873ec/MacEditorInstaller/Unity-2020.1.4f1.pkg",
@@ -23,6 +28,11 @@
     "linux": "https://download.unity3d.com/download_unity/2ab9c4179772/LinuxEditorInstaller/Unity.tar.xz",
     "mac": "https://download.unity3d.com/download_unity/2ab9c4179772/MacEditorInstaller/Unity-2020.1.0f1.pkg",
     "win64": "https://download.unity3d.com/download_unity/2ab9c4179772/Windows64EditorInstaller/UnitySetup64-2020.1.0f1.exe"
+  },
+  "2019.4.10f1": {
+    "linux": "https://download.unity3d.com/download_unity/5311b3af6f69/LinuxEditorInstaller/Unity.tar.xz",
+    "mac": "https://download.unity3d.com/download_unity/5311b3af6f69/MacEditorInstaller/Unity-2019.4.10f1.pkg",
+    "win64": "https://download.unity3d.com/download_unity/5311b3af6f69/Windows64EditorInstaller/UnitySetup64-2019.4.10f1.exe"
   },
   "2019.4.9f1": {
     "linux": "https://download.unity3d.com/download_unity/50fe8a171dd9/LinuxEditorInstaller/Unity.tar.xz",
@@ -338,6 +348,11 @@
     "linux": "https://download.unity3d.com/download_unity/292b93d75a2c/LinuxEditorInstaller/Unity.tar.xz",
     "mac": "https://download.unity3d.com/download_unity/292b93d75a2c/MacEditorInstaller/Unity-2019.1.0f2.pkg",
     "win64": "https://download.unity3d.com/download_unity/292b93d75a2c/Windows64EditorInstaller/UnitySetup64-2019.1.0f2.exe"
+  },
+  "2018.4.27f1": {
+    "linux": "https://download.unity3d.com/download_unity/4e283b7d3f88/LinuxEditorInstaller/Unity.tar.xz",
+    "mac": "https://download.unity3d.com/download_unity/4e283b7d3f88/MacEditorInstaller/Unity-2018.4.27f1.pkg",
+    "win64": "https://download.unity3d.com/download_unity/4e283b7d3f88/Windows64EditorInstaller/UnitySetup64-2018.4.27f1.exe"
   },
   "2018.4.26f1": {
     "linux": "https://download.unity3d.com/download_unity/a7ac1c6396db/LinuxEditorInstaller/Unity.tar.xz",
