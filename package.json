@@ -11,14 +11,14 @@
   },
   "license": "MIT",
   "dependencies": {
-    "chalk": "4.0.0",
-    "jsdom": "16.2.2",
-    "meow": "6.1.0",
+    "chalk": "4.1.0",
+    "jsdom": "16.4.0",
+    "meow": "7.1.1",
     "raspar": "2.0.0",
-    "update-notifier": "4.1.0"
+    "update-notifier": "4.1.1"
   },
   "devDependencies": {
-    "jest": "25.5.3"
+    "jest": "26.4.2"
   },
   "scripts": {
     "test": "jest",
