@@ -1,2 +1,2 @@
 changelog:
-	generate-upm-changelog -i -u > CHANGELOG.md
+	generate-local-changelog -i -u > CHANGELOG.md
