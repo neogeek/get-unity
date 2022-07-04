@@ -1,28 +1,32 @@
 {
   "name": "get-unity",
   "description": "Command line tool for getting the download URL for the latest or specific version of Unity.",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "main": "index.js",
+  "type": "module",
   "bin": {
     "get-unity": "bin/index.js"
   },
   "engines": {
-    "node": ">=12.0"
+    "node": ">=16"
   },
   "license": "MIT",
   "dependencies": {
-    "chalk": "4.1.0",
-    "jsdom": "16.4.0",
-    "meow": "9.0.0",
-    "raspar": "2.1.0",
-    "update-notifier": "5.1.0"
+    "chalk": "5.0.1",
+    "jsdom": "20.0.0",
+    "meow": "10.1.3",
+    "node-fetch": "3.2.6",
+    "read-pkg-up": "9.1.0",
+    "update-notifier": "6.0.2"
   },
   "devDependencies": {
-    "jest": "26.6.3"
+    "jest": "28.1.2"
   },
   "scripts": {
-    "test": "jest",
-    "postinstall": "node bin/index.js --force"
+    "start": "node bin/index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "update": "node bin/index.js --force",
+    "postinstall": "npm run update"
   },
   "keywords": [
     "unity"

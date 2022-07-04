@@ -1,0 +1,45 @@
+name: Update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Update NPM to latest
+        run: npm install npm@latest -g
+
+      - name: Print Node.js and NPM version
+        run: |
+          node -v
+          npm -v
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Update
+        run: npm run update
+
+      - name: Setup git
+        run: |
+          git config user.name "neogeek-bot"
+          git config user.email "neogeek0101+bot@gmail.com"
+
+      - name: Git commit changes
+        run: |
+          git pull
+          git add data/editor-installers.json
+          git commit -m "Updated editor-installers.json [skip ci]" || exit 0
+          git push origin main

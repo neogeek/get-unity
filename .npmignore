@@ -1,11 +1,8 @@
 .github/
 
-temp/
-
 utils/
 
-.travis.yml
-appveyor.yml
+libs/*.test.js
 
 logo.png
 

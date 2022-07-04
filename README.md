@@ -3,7 +3,7 @@
 > 🕹 Command line tool for getting the download URL for the latest or specific version of Unity.
 
 [![NPM Version](http://img.shields.io/npm/v/get-unity.svg?style=flat)](https://www.npmjs.org/package/get-unity)
-[![Build Status](https://travis-ci.com/neogeek/get-unity.svg?branch=master)](https://travis-ci.com/neogeek/get-unity)
+[![Tests](https://github.com/neogeek/get-unity/actions/workflows/test.workflow.yml/badge.svg)](https://github.com/neogeek/get-unity/actions/workflows/test.workflow.yml)
 [![Build status](https://ci.appveyor.com/api/projects/status/2k76ian4w73uk3af?svg=true)](https://ci.appveyor.com/project/neogeek/get-unity)
 
 ## Install
@@ -66,9 +66,9 @@ $ echo $UNITY_URL
 ### `getUnityUrls(string filter [, string filePath])`
 
 ```javascript
-const { getUnityUrls } = require("get-unity");
+const { getUnityUrls } = require('get-unity');
 
-getUnityUrls("2019", "./data/editor-installers.json").then(urls =>
+getUnityUrls('2019', './data/editor-installers.json').then(urls =>
   console.log(urls)
 );
 ```
@@ -86,7 +86,7 @@ Output:
 ### `parseVersionFromString(string contents)`
 
 ```javascript
-const { parsers } = require("get-unity");
+const { parsers } = require('get-unity');
 
 console.log(
   parsers.parseVersionFromString(`m_EditorVersion: 2019.2.9f1
@@ -103,9 +103,9 @@ Output:
 ### `updateEditorInstallers([string filePath, int ttl])`
 
 ```javascript
-const { updateEditorInstallers } = require("get-unity");
+const { updateEditorInstallers } = require('get-unity');
 
-updateEditorInstallers("./data/editor-installers.json", 3600000).then(() =>
-  console.log("Done")
+updateEditorInstallers('./data/editor-installers.json', 3600000).then(() =>
+  console.log('Done')
 );
 ```

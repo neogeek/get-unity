@@ -1,14 +1,6 @@
 {
   "arrowParens": "avoid",
   "singleQuote": true,
-  "tabWidth": 4,
-  "trailingComma": "none",
-  "overrides": [
-    {
-      "files": ["*.json", ".*rc", "*.yaml", "*.md"],
-      "options": {
-        "tabWidth": 2
-      }
-    }
-  ]
+  "tabWidth": 2,
+  "trailingComma": "es5"
 }

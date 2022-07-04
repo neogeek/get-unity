@@ -1,5 +1,11 @@
 # Changelog
 
+## [HEAD](https://github.com/neogeek/get-unity/tree/HEAD) - (2022-07-04)
+
+[Full Changelog](https://github.com/neogeek/get-unity/compare/v1.5.0...HEAD)
+
+- No merges found
+
 ## [v1.5.0](https://github.com/neogeek/get-unity/tree/v1.5.0) - (2021-02-03)
 
 [Full Changelog](https://github.com/neogeek/get-unity/compare/v1.4.1...v1.5.0)

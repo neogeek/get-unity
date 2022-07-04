@@ -1,9 +1,10 @@
 environment:
-  nodejs_version: "12"
+  nodejs_version: '16'
 
 install:
   - ps: Install-Product node $env:nodejs_version
-  - npm install
+  - npm install npm@latest -g
+  - npm ci
 
 test_script:
   - node --version
