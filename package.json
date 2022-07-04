@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "node bin/index.js",
-    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test": "npx cross-env NODE_OPTIONS=--experimental-vm-modules jest",
     "update": "node bin/index.js --force",
     "postinstall": "npm run update"
   },
