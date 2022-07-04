@@ -2,7 +2,7 @@
 
 utils/
 
-libs/*.test.js
+*.test.js
 
 logo.png
 
