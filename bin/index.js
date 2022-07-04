@@ -1,7 +1,5 @@
 #!/usr/bin/env node
 
-import os from 'os';
-
 import chalk from 'chalk';
 
 import meow from 'meow';
@@ -14,6 +12,7 @@ import {
   EDITOR_INSTALLERS_FILE_PATH,
   updateEditorInstallers,
 } from '../lib/update-editor-installers.js';
+import { getOperatingSystemKey } from '../lib/os.js';
 import { getUnityUrls } from '../lib/get-unity-urls.js';
 import { parseVersionFromString } from '../lib/parsers.js';
 
@@ -64,12 +63,6 @@ const cli = meow(
   }
 );
 
-const osKeyMap = {
-  Darwin: 'mac',
-  Linux: 'linux',
-  Windows_NT: 'win64',
-};
-
 const DEFAULT_CACHE_TTL = 3600000;
 
 updateNotifier({ pkg: (await readPackageUp()).packageJson }).notify();
@@ -84,10 +77,12 @@ if (cli.flags.file) {
   }
 }
 
+const osKey = getOperatingSystemKey();
+
 if (cli.flags.offline) {
   const urls = await getUnityUrls(cli.input[0], EDITOR_INSTALLERS_FILE_PATH);
 
-  process.stdout.write(`${urls[osKeyMap[os.type()]]}`);
+  process.stdout.write(`${urls[osKey]}`);
 } else {
   try {
     await updateEditorInstallers(
@@ -97,7 +92,7 @@ if (cli.flags.offline) {
 
     const urls = await getUnityUrls(cli.input[0], EDITOR_INSTALLERS_FILE_PATH);
 
-    process.stdout.write(`${urls[osKeyMap[os.type()]]}`);
+    process.stdout.write(`${urls[osKey]}`);
   } catch (error) {
     process.stderr.write(`${chalk.red('Error:')} ${error.message}`);
   }
