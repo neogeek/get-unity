@@ -4,7 +4,7 @@
 
 [Full Changelog](https://github.com/neogeek/get-unity/compare/v1.5.0...HEAD)
 
-- No merges found
+- Added Mac Silicon support. (#28) [#28](https://github.com/neogeek/get-unity/pull/28)
 
 ## [v1.5.0](https://github.com/neogeek/get-unity/tree/v1.5.0) - (2021-02-03)
 
