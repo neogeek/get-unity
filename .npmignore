@@ -4,6 +4,8 @@ utils/
 
 *.test.js
 
+.prettierrc
+
 logo.png
 
-Makefile
+appveyor.yml
