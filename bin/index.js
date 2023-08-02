@@ -35,26 +35,26 @@ const cli = meow(
   {
     flags: {
       file: {
-        alias: 'f',
+        shortFlag: 'f',
         type: 'string',
       },
       force: {
-        alias: 'r',
+        shortFlag: 'r',
         default: false,
         type: 'boolean',
       },
       help: {
-        alias: 'h',
+        shortFlag: 'h',
         default: false,
         type: 'boolean',
       },
       offline: {
-        alias: 'o',
+        shortFlag: 'o',
         default: false,
         type: 'boolean',
       },
       version: {
-        alias: 'v',
+        shortFlag: 'v',
         default: false,
         type: 'boolean',
       },
