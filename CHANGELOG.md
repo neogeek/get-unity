@@ -4,6 +4,7 @@
 
 [Full Changelog](https://github.com/neogeek/get-unity/compare/v1.5.0...HEAD)
 
+- Check for link selector before returning result. (#33) [#33](https://github.com/neogeek/get-unity/pull/33)
 - [hotfix] Updated packages. (#32) [#32](https://github.com/neogeek/get-unity/pull/32)
 - Added Mac Silicon support. (#28) [#28](https://github.com/neogeek/get-unity/pull/28)
 
