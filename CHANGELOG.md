@@ -1,9 +1,10 @@
 # Changelog
 
-## [HEAD](https://github.com/neogeek/get-unity/tree/HEAD) - (2022-07-04)
+## [HEAD](https://github.com/neogeek/get-unity/tree/HEAD) - (2023-08-01)
 
 [Full Changelog](https://github.com/neogeek/get-unity/compare/v1.5.0...HEAD)
 
+- [hotfix] Updated packages. (#32) [#32](https://github.com/neogeek/get-unity/pull/32)
 - Added Mac Silicon support. (#28) [#28](https://github.com/neogeek/get-unity/pull/28)
 
 ## [v1.5.0](https://github.com/neogeek/get-unity/tree/v1.5.0) - (2021-02-03)
