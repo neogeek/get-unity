@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node: [18.17.0, 20.5.0]
+        node: [18.18.2, 20.9.0]
 
     steps:
       - name: Check out repository
