@@ -1,8 +1,11 @@
 environment:
   nodejs_version: 18.18.2
 
+platform:
+  - x64
+
 install:
-  - ps: Install-Product node $env:nodejs_version
+  - ps: Install-Product node $env:nodejs_version $env:platform
   - npm install npm@latest -g
   - npm ci
 
