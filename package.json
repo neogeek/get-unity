@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "node bin/index.js",
-    "test": "npx cross-env NODE_OPTIONS=--experimental-vm-modules jest",
+    "test": "node --test lib/parsers.test.js",
     "update": "node bin/index.js --force",
     "postinstall": "npm run update"
   },
