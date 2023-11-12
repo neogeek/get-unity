@@ -2,7 +2,7 @@ image:
   - Visual Studio 2022
 
 environment:
-  nodejs_version: 18.18.2
+  nodejs_version: 18
 
 platform:
   - x64
@@ -13,8 +13,8 @@ install:
   - npm ci
 
 test_script:
-  - node --version
-  - npm --version
+  - node -v
+  - npm -v
   - npm test
 
 build: false

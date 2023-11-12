@@ -16,7 +16,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18.18.2
+          node-version: 18
 
       - name: Update NPM to latest
         run: npm install npm@latest -g
