@@ -4,7 +4,6 @@
 
 [![NPM Version](http://img.shields.io/npm/v/get-unity.svg?style=flat)](https://www.npmjs.org/package/get-unity)
 [![Tests](https://github.com/neogeek/get-unity/actions/workflows/test.workflow.yml/badge.svg)](https://github.com/neogeek/get-unity/actions/workflows/test.workflow.yml)
-[![Build status](https://ci.appveyor.com/api/projects/status/2k76ian4w73uk3af?svg=true)](https://ci.appveyor.com/project/neogeek/get-unity)
 
 ## Install
 
