@@ -1,9 +1,13 @@
 # Changelog
 
-## [HEAD](https://github.com/neogeek/get-unity/tree/HEAD) - (2023-08-01)
+## [v2.0.0](https://github.com/neogeek/get-unity/tree/v2.0.0) - (2024-04-30)
 
-[Full Changelog](https://github.com/neogeek/get-unity/compare/v1.5.0...HEAD)
+[Full Changelog](https://github.com/neogeek/get-unity/compare/v1.5.0...v2.0.0)
 
+- [hotfix] Updated packages. [#38](https://github.com/neogeek/get-unity/pull/38)
+- Test on ubuntu and windows via GitHub Actions. (#37) [#37](https://github.com/neogeek/get-unity/pull/37)
+- Fixed invalid export. (#36) [#36](https://github.com/neogeek/get-unity/pull/36)
+- Removed jest in favor of the native test utility. (#35) [#35](https://github.com/neogeek/get-unity/pull/35)
 - Check for link selector before returning result. (#33) [#33](https://github.com/neogeek/get-unity/pull/33)
 - [hotfix] Updated packages. (#32) [#32](https://github.com/neogeek/get-unity/pull/32)
 - Added Mac Silicon support. (#28) [#28](https://github.com/neogeek/get-unity/pull/28)
@@ -58,11 +62,11 @@
 
 [Full Changelog](https://github.com/neogeek/get-unity/compare/v1.0.0...v1.1.0)
 
-- Added update-notifier package. [#6](https://github.com/neogeek/get-unity/pull/6)
 - Editor installers update (and offline mode) (#14) [#14](https://github.com/neogeek/get-unity/pull/14)
 - Add parsing file (ProjectVersion.txt) via CLI flag support. (#12) [#12](https://github.com/neogeek/get-unity/pull/12)
 - Added aliases to help and version flags. (#11) [#11](https://github.com/neogeek/get-unity/pull/11)
 - Added chalk and meow for managing cli input and flags. (#8) [#8](https://github.com/neogeek/get-unity/pull/8)
+- Added update-notifier package. [#6](https://github.com/neogeek/get-unity/pull/6)
 
 ## [v1.0.0](https://github.com/neogeek/get-unity/tree/v1.0.0) - (2019-10-29)
 

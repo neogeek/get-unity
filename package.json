@@ -8,7 +8,7 @@
     "get-unity": "bin/index.js"
   },
   "engines": {
-    "node": ">=16.13.0"
+    "node": ">=20"
   },
   "license": "MIT",
   "dependencies": {
