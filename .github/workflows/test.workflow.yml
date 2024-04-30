@@ -14,10 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.pull_request.draft == false
 
-    strategy:
-      matrix:
-        node: [18, 20]
-
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -25,7 +21,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: ${{ matrix.node }}
+          node-version: 20
 
       - name: Update NPM to latest
         run: npm install npm@latest -g
