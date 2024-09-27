@@ -1,4 +1,10 @@
 {
+  "2022.3.48f1": {
+    "linux": "https://download.unity3d.com/download_unity/8bf49c377ebf/LinuxEditorInstaller/Unity.tar.xz",
+    "mac": "https://download.unity3d.com/download_unity/8bf49c377ebf/MacEditorInstaller/Unity-2022.3.48f1.pkg",
+    "macArm64": "https://download.unity3d.com/download_unity/8bf49c377ebf/MacEditorInstallerArm64/Unity-2022.3.48f1.pkg",
+    "win64": "https://download.unity3d.com/download_unity/8bf49c377ebf/Windows64EditorInstaller/UnitySetup64-2022.3.48f1.exe"
+  },
   "2022.3.47f1": {
     "linux": "https://download.unity3d.com/download_unity/88c277b85d21/LinuxEditorInstaller/Unity.tar.xz",
     "mac": "https://download.unity3d.com/download_unity/88c277b85d21/MacEditorInstaller/Unity-2022.3.47f1.pkg",
