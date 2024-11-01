@@ -1,4 +1,10 @@
 {
+  "6000.0.25f1": {
+    "linux": "https://download.unity3d.com/download_unity/4859ab7b5a49/LinuxEditorInstaller/Unity.tar.xz",
+    "mac": "https://download.unity3d.com/download_unity/4859ab7b5a49/MacEditorInstaller/Unity-6000.0.25f1.pkg",
+    "macArm64": "https://download.unity3d.com/download_unity/4859ab7b5a49/MacEditorInstallerArm64/Unity-6000.0.25f1.pkg",
+    "win64": "https://download.unity3d.com/download_unity/4859ab7b5a49/Windows64EditorInstaller/UnitySetup64-6000.0.25f1.exe"
+  },
   "6000.0.24f1": {
     "linux": "https://download.unity3d.com/download_unity/11fa355cd605/LinuxEditorInstaller/Unity.tar.xz",
     "mac": "https://download.unity3d.com/download_unity/11fa355cd605/MacEditorInstaller/Unity-6000.0.24f1.pkg",
